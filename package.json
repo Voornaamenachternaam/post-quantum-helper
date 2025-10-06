@@ -1,0 +1,47 @@
+{
+  "name": "@profullstack/post-quantum-helper",
+  "version": "1.0.0",
+  "description": "Post-quantum encryption helper using ML-KEM (Kyber) + ChaCha20-Poly1305",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "quantum": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "mocha tests/**/*.test.js",
+    "test:watch": "mocha tests/**/*.test.js --watch",
+    "lint": "eslint src tests bin",
+    "lint:fix": "eslint src tests bin --fix",
+    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\" \"bin/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\" \"tests/**/*.js\" \"bin/**/*.js\""
+  },
+  "keywords": [
+    "post-quantum",
+    "encryption",
+    "ml-kem",
+    "kyber",
+    "chacha20",
+    "poly1305",
+    "quantum-resistant",
+    "cryptography"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^1.0.0",
+    "mlkem": "^1.1.1"
+  },
+  "optionalDependencies": {
+    "inquirer": "^10.2.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "chai": "^5.1.1",
+    "eslint": "^9.14.0",
+    "mocha": "^10.7.3",
+    "prettier": "^3.3.3"
+  }
+}
