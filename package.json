@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@noble/ciphers": "^1.0.0",
-    "mlkem": "^1.1.1"
+    "mlkem": "^2.5.0"
   },
   "optionalDependencies": {
     "inquirer": "^10.2.2"
